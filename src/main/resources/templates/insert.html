@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>导入学生数据</title>
+    <link rel="stylesheet" th:href="@{/CSS/insert.css}" type="text/css">
+
+</head>
+<body>
+<form method="post" enctype="multipart/form-data" id="form" action="/success">
+    <table>
+        <tr>
+            <td class="td"><input type="file" name="filename" id="file"/></td>
+        </tr>
+
+        <tr>
+            <td class="td_sm">
+                <div>说明：<br>
+                    1.所提交的Excel文件必须有且仅有两列数据（“学号”和“姓名”）！！！<br>
+                    2.本程序从所提交的Excel文件的第二行开始解析数据！！！<br>
+                    3.本程序需要此电脑中安装MySQL数据库。<br>
+                    4.您需要先将MySQL的登陆用户名和密码都设置为root。（请注意！！！）<br>
+                    5.本程序需要MySQL中含有test数据库。（若无请先创建！！！）<br>
+                    6.本程序会将提交的Excel文件存入MySQL的test数据库并自动建表。<br>
+                    7.若test下含有useStudentsToDoLuckDraw表则会进行数据覆盖。（请注意！！！）
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="td"><input type="submit" value="提  交  文  件" id="submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

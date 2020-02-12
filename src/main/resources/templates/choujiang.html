@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>抽奖</title>
+    <link rel="stylesheet" th:href="@{/CSS/choujiang.css}" type="text/css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="text">恭喜这位同学获奖！</div>
+            </td>
+        </tr>
+        <tr>
+            <td>学号</td>
+            <td>姓名</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="sid" th:text="${sid}"></div>
+            </td>
+            <td>
+                <div class="sname" th:text="${sname}"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="submit"><input type="button" value="重  新  抽  奖" onclick="location.reload()"></td>
+        </tr>
+    </table>
+</body>
+</html>

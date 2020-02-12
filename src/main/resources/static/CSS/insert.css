@@ -1,0 +1,47 @@
+*{
+    background-color: rgb(217, 245, 247);
+    font-family: "楷体";
+    /* border: black 1px solid; */
+}
+
+table{
+    margin: auto;
+    width: 600px;
+    height: 346px;
+    margin-top: 7%;
+    border: #c7c7c7 6px solid ;
+}
+
+.td{
+    font-size: 30px;
+    text-align: center;
+    height:80px;
+    width: 50%;
+    font-size: 40px;
+}
+
+.td_sm{
+    font-family: "仿宋";
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.76);
+    padding-left: 15px;
+}
+
+#file{
+    /* border: black 1px solid; */
+    font-size: 60%;
+    width: 340px;
+    margin-top: 50px;
+    cursor:pointer;
+}
+
+#submit{
+    font-size: 30px;
+    width: 75%;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 214, 255), rgb(123, 222, 255));
+    border-radius: 15px;
+    /* margin-top: 80px; */
+    height: 40px;
+    cursor:pointer;
+}

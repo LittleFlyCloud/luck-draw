@@ -1,0 +1,36 @@
+*{
+    background-color: rgb(217, 245, 247);
+    font-family: "楷体";
+    /* border: black 1px solid; */
+}
+
+.text{
+    font-size: 200%;
+    text-align: center;
+
+}
+
+table{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    margin-top: 7%;
+    border: #c7c7c7 6px solid ;
+
+}
+
+td{
+    height:80px;
+    width: 50%;
+}
+
+input{
+    font-size: 100%;
+    width: 75%;
+    border: 0px;
+    background: linear-gradient(to right, rgb(182, 214, 255), rgb(123, 222, 255));
+    border-radius: 15px;
+    cursor:pointer;
+}
